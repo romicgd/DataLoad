@@ -11,11 +11,13 @@ Create App registration in MS Entra and note client_id and client secret
 2. Configure required aplication permissions
 https://yourtenant.sharepoint.com/sites/yoursite/_layouts/15/appinv.aspx
 
-Specify your site clie_id
+Specify your site client_id
 
+```xml
 <AppPermissionRequests AllowAppOnlyPolicy="true">
   <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Read" />
 </AppPermissionRequests>
+```
 
 3. Install the required packages:
 
